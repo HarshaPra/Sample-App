@@ -1,0 +1,98 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainBackground{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+    
+   
+    
+
+}
+.mainBackground .logo{
+    align-items: center;
+    padding-left:15px ;
+}
+.mainBackground .menus ul{
+    align-items: center;
+    display: flex;
+
+}
+.mainBackground .menus ul li{
+    list-style: none;
+    display: flex;
+
+}
+.mainBackground .menus ul li a{
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    font-family: arial;
+    padding: 0 15px;
+    margin: 10px;
+    font-size: 14px;
+   
+}
+.mainBackground .menus ul li a:hover{
+    color: antiquewhite;
+    transition: all 0.3s ease-in-out;
+}
+.mainBackground .menus ul li:last-child a{
+    color: antiquewhite;
+    font-weight: 200;
+    border: 1px rgb(78, 159, 161);
+}
+.mainBackground .menus ul li:last-child a:hover{
+    color: rgb(0, 227, 151);   
+}
+.mainBackground .hamburgar{
+    display: none;
+}
+
+
+@media screen and (max-width:740px) {
+.navMenu {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: -120%;
+    z-index: -3;
+    transition: 0.3s;
+   
+   
+}
+.navMenu.active{
+    left: 0;
+}
+
+.navMenu li {
+    padding: 1rem;
+    
+}
+.navMenu li a{
+    font-size: 120px;
+}
+.mainBackground .hamburgar{
+    display: block;
+    color: aliceblue;
+    align-items: center;
+    }
+.mainBackground .hamburgar:hover{
+    color: rgb(179, 179, 179);
+    transition: all 0.5s ease-in-out;
+
+    }
+    
+}
